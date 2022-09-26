@@ -97,4 +97,6 @@ function my_scripts_method() {
     ```
     wp_enqueue_script( 'jquery' );
     ```
-}  
+} 
+
+ ```
