@@ -89,12 +89,13 @@ function my_scripts_method() {
 ```
  ## регистрируем
  
-  ```
+ ```
     wp_register_script( 'jquery-core', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false, null, true )
     wp_register_script( 'jquery', false, array('jquery-core'), null, true );
 ```
 ## подключаем
-    ```
+
+  ```
  wp_enqueue_script( 'jquery' )
 } 
 ```
