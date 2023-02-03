@@ -43,14 +43,13 @@ function timber_scripts() {
 <?php the_field('header__bg') ?>
 ```
 ### **підключення футера сайту**
-```
-<?php get_footer(); ?>
-``` 
+```<?php get_footer(); ?>```
+
 
   ### **автоматично виводиться інформація про сайт опис <title>...</title>**
-```
-<?php bloginfo('description' ); ?>
-   ``` 
+
+```<?php bloginfo('description' ); ?>```
+  
 
 
 ### Створення файлу header.php у корені проекту в ньому прописуємо
