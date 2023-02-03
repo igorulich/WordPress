@@ -32,8 +32,6 @@ add_action( 'wp_enqueue_scripts', 'timber_style' );
    ``` 
    ```  
 function timber_scripts() {
-```
-```
  wp_enqueue_script( 'libs-script', get_template_directory_uri() .'/assets/js/libs.min.js', array(jquery), 'null', true );
          }
    ``` 
