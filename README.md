@@ -20,10 +20,7 @@ add_action( 'wp_enqueue_scripts', 'timber_style' );
    }
   ``` 
 ## *підключення стилів де main-style підключає стилі з кореня проекту*
-   ### автоматично виводиться інформація про сайт опис <title>...</title>
-```
-<?php bloginfo('description' ); ?>
-   ``` 
+ 
   wp_enqueue_style( 'main-style', get_stylesheet_uri() );
   ``` 
 
@@ -50,7 +47,10 @@ function timber_scripts() {
 <?php get_footer(); ?>
 ``` 
 
-
+  ### автоматично виводиться інформація про сайт опис <title>...</title>
+```
+<?php bloginfo('description' ); ?>
+   ``` 
 
 
 ### Створення файлу header.php у корені проекту в ньому прописуємо
