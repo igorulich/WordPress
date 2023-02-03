@@ -72,7 +72,6 @@ function timber_scripts() {
 template_url автоматично прописує шлях
 
 ```<?php bloginfo('template_url' ); ?>```
-
 ### jquery согласно документации в functions.php:
 
 ```add_action( 'wp_enqueue_scripts', 'my_scripts_method' );```
@@ -84,3 +83,4 @@ template_url автоматично прописує шлях
     wp_enqueue_script( 'jquery' )
 } 
 ```
+
