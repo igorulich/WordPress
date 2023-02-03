@@ -21,9 +21,9 @@ add_action( 'wp_enqueue_scripts', 'timber_style' );
    }
   ``` 
 ### ***підключення стилів де main-style підключає стилі з кореня проекту***
- ```
-  wp_enqueue_style( 'main-style', get_stylesheet_uri() );
-  ``` 
+
+  ```wp_enqueue_style( 'main-style', get_stylesheet_uri() );```
+ 
 
 ### ***підключення скриптів з кореня проекту***
  *підключення власних скриптів де timber_scripts і function timber_scripts повинні мати однакові назву*
