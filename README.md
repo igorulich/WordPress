@@ -12,9 +12,8 @@ Author: the Ulych Igor */
 *Підключає файли зі стилями та скриптами для всіх сторінок вашого проекту*
 ### ***підключення власних стилів із директорії***
 *підключення власних стилів де timber_style і function timber_style повинні мати однакові назву*
-``` 
-add_action( 'wp_enqueue_scripts', 'timber_style' );
-```
+
+```add_action( 'wp_enqueue_scripts', 'timber_style' );```
  ``` 
  function timber_style() {
    wp_enqueue_style( 'new-main-style', get_temlate_directory_uri().'/assets/css/fail.css ');
