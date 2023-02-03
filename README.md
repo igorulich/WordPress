@@ -59,41 +59,40 @@ function timber_scripts() {
 <?php wp_head(); ?>
  ``` 
 ### Створення файлу footer.php у корені проекту в ньому прописуємо	
-```
-  <?php wp_footer(); ?>
-```
+
+  ```<?php wp_footer(); ?>```
+
 Підключення скриптів запускає хук wp_footer - один з основних хуків, без якого не працюватимуть багато плагінів. Викликається у підвалі теми перед закриваючим тегом body, у файлі footer.php.
 
 ### the_field() –Виводить на екран значення вказаного поля (метаполя). Функція WordPress.
-```
-<?php the_field('main-title') ?>
-```
+
+```<?php the_field('main-title') ?>```
+
 ### bloginfo() —Виводить статичну інформацію 
 template_url автоматично прописує шлях
-```
-<?php bloginfo('template_url' ); ?>
-```
+
+```<?php bloginfo('template_url' ); ?>```
+
 ### jquery согласно документации в functions.php:
-```
-add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
-```
-```
-function my_scripts_method() {
-```
+
+```add_action( 'wp_enqueue_scripts', 'my_scripts_method' );```
+
+```function my_scripts_method() {
+
 ## отменяем зарегистрированный jQuery
     
- ```
+
  wp_deregister_script('jquery');
-```
+
  ## регистрируем
  
- ```
+
     wp_register_script( 'jquery-core', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false, null, true )
     wp_register_script( 'jquery', false, array('jquery-core'), null, true );
-```
+
 ## подключаем
 
-  ```
+ 
  wp_enqueue_script( 'jquery' )
 } 
 ```
