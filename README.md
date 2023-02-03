@@ -19,13 +19,15 @@ add_action( 'wp_enqueue_scripts', 'timber_style' );
    wp_enqueue_style( 'new-main-style', get_temlate_directory_uri().'/assets/css/fail.css ');
    }
   ``` 
-### підключення стилів де main-style підключає стилі з кореня проекту
-   
+## *підключення стилів де main-style підключає стилі з кореня проекту*
+   ### автоматично виводиться інформація про сайт опис <title>...</title>
+```
+<?php bloginfo('description' ); ?>
    ``` 
   wp_enqueue_style( 'main-style', get_stylesheet_uri() );
   ``` 
 
-### підключення скриптів з кореня проекту
+## *підключення скриптів з кореня проекту*
  підключення власних скриптів де timber_scripts і function timber_scripts повинні мати однакові назву
   ``` 
   add_action( 'wp_enqueue_scripts', 'timber_scripts' );
@@ -37,9 +39,7 @@ function timber_scripts() {
  wp_enqueue_script( 'libs-script', get_template_directory_uri() .'/assets/js/libs.min.js', array(jquery), 'null', true );
          }
    ``` 
-### автоматично виводиться інформація про сайт опис <title>...</title>
-```
-<?php bloginfo('description' ); ?>
+
 ```
 ### Advanced Custom Fields - це популярний WordPress плагін для розробників, що дозволяє додавати метаполі куди завгодно і виводити їх значення будь-де.  Використовуйте функції, такі як get_field() і the_field(),
 ```
