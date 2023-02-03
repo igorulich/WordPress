@@ -34,8 +34,6 @@ function timber_scripts() {
  wp_enqueue_script( 'libs-script', get_template_directory_uri() .'/assets/js/libs.min.js', array(jquery), 'null', true );
          }
    ``` 
-
-```
 ### **Advanced Custom Fields** -
 *це популярний WordPress плагін для розробників,що дозволяє додавати метаполі куди завгодно і виводити їх значення будь-де.
 Використовуйте функції, такі як* 
