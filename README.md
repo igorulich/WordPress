@@ -21,7 +21,7 @@ add_action( 'wp_enqueue_scripts', 'timber_style' );
    }
   ``` 
 ### ***підключення стилів де main-style підключає стилі з кореня проекту***
- 
+ ```
   wp_enqueue_style( 'main-style', get_stylesheet_uri() );
   ``` 
 
