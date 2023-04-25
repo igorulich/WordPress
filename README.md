@@ -7,7 +7,7 @@ Author: the Ulych Igor */
 ```
 ## *Створення файлу functions.php у корені проекту.*
 *Підключає файли зі стилями та скриптами для всіх сторінок вашого проекту*
-## ***підключення власних стилів із директорії***
+### ***підключення власних стилів із директорії***
 *підключення власних стилів де timber_style і function timber_style повинні мати однакові назву*
 
 ```add_action( 'wp_enqueue_scripts', 'timber_style' );```
@@ -16,12 +16,12 @@ Author: the Ulych Igor */
    wp_enqueue_style( 'new-main-style', get_temlate_directory_uri().'/assets/css/fail.css ');
    }
   ``` 
-## ***підключення стилів де main-style підключає стилі з кореня проекту***
+### ***підключення стилів де main-style підключає стилі з кореня проекту***
 
   ```wp_enqueue_style( 'main-style', get_stylesheet_uri() );```
  
 
-## ***підключення скриптів з кореня проекту***
+### ***підключення скриптів з кореня проекту***
  *підключення власних скриптів де timber_scripts і function timber_scripts повинні мати однакові назву*
   ``` 
   add_action( 'wp_enqueue_scripts', 'timber_scripts' );
@@ -46,7 +46,7 @@ function timber_scripts() {
 ```<?php get_footer(); ?>```
 
 
-  ## **автоматично виводиться інформація про сайт опис <title>...</title>**
+  #### **автоматично виводиться інформація про сайт опис <title>...</title>**
 
 ```<?php bloginfo('description' ); ?>```
   
